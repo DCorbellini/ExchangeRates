@@ -4,11 +4,24 @@
   "description": "Interfaz para exchengerates.io para r/ArgentinaPrograma",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-run": "cypress run",
+    "cypress-dev": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1"
-  }
+  },
+  "devDependencies": {
+    "cypress": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DCorbellini/ExchangeRates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DCorbellini/ExchangeRates/issues"
+  },
+  "homepage": "https://github.com/DCorbellini/ExchangeRates#readme"
 }
