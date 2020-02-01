@@ -15,4 +15,18 @@ context('ExchangeRates', () => {
             })
     })
 
+    it('Cambia de base y comprobar nuevos valores', () => {
+
+        cy.get('#base').find('.opcion').first().invoke('val')
+        .then(base => {
+            cy.get('#base').select(base)
+        })
+        cy.get('#boton').click()
+        cy.wait(1000).get('#base').invoke('val')
+            .then($base => {
+                cy.get(`.valor-${$base}`).should('have.text', '1')
+            })
+
+    })
+
 })
