@@ -5,11 +5,13 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Exchange Rates</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <style>
-    header > h1, h2{
+    header>h1,
+    form {
         display: flex;
         justify-content: center;
     }
@@ -18,17 +20,22 @@
 <body>
     <header>
         <h1>Exchange Rates</h1>
-        <h2>
-            <span id="fecha">... </span>
-            <span id="base"> ...</span>
-        </h2>
+        <form>
+            <input id="fecha" type="date">
+            <select id="base"> </select>
+            <button id="boton" type="button">Siguiente</button>
+        </form>
     </header>
-    
-    <div class="wrap">
-        <ul class="lista"></ul>
+
+
+
+    <div id="wrap">
+        <ul id="lista">
+            <li>cargando...</li>
+        </ul>
     </div>
-    
-    
+
+
     <script src='src/main.js'></script>
 </body>
 
