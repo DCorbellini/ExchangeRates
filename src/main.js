@@ -64,7 +64,7 @@ function manejarLista(respuestaJSON) {
         nuevoValor.classList.add('col-sm-4')
         nuevoValor.classList.add('list-group-item')
         nuevoValor.classList.add('item')
-        nuevoValor.classList.add(moneda)
+        nuevoValor.classList.add('valor-', moneda)
         nuevoValor.innerText = respuestaJSON.rates[moneda]
 
 
