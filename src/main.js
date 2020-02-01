@@ -42,6 +42,7 @@ function manejarOpciones(respuestaJSON) {
 }
 function crearOpcionBase(key) {
     const nuevaOpcion = document.createElement('option')
+    nuevaOpcion.classList.add('opcion')
     nuevaOpcion.value = key
     nuevaOpcion.innerText = key
     $seleccionarBase.appendChild(nuevaOpcion)
