@@ -52,26 +52,26 @@ function manejarLista(respuestaJSON) {
         const nuevoItem = document.createElement('div')
         nuevoItem.classList.add('row')
         nuevoItem.classList.add('item')
+
         const nuevaMoneda = document.createElement('div')
         nuevaMoneda.classList.add('col-sm-1')
         nuevaMoneda.classList.add('list-group-item')
         nuevaMoneda.classList.add('item')
+        nuevaMoneda.classList.add(moneda)
         nuevaMoneda.innerText = moneda
+
         const nuevoValor = document.createElement('div')
         nuevoValor.classList.add('col-sm-4')
         nuevoValor.classList.add('list-group-item')
         nuevoValor.classList.add('item')
+        nuevoValor.classList.add(moneda)
         nuevoValor.innerText = respuestaJSON.rates[moneda]
+
 
         nuevoItem.appendChild(nuevaMoneda)
         nuevoItem.appendChild(nuevoValor)
         $lista.appendChild(nuevoItem)
 
-        
-        //`${moneda}: ${respuestaJSON.rates[moneda]}`
-
-
-        //$lista.appendChild(rate)
     })
 }
 
